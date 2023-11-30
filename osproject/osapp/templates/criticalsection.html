@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.services-button {
+ background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    background-color:#87CEEB;
+    color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.message {
+
+    font-size: 38px;
+}
+
+.thank-you {
+    font-size: 38px;
+    font-weight: bold;
+}
+.tourify{
+    font-size: 33px;
+    font-weight: bold;
+}
+.box:hover {
+    background-color: #D8BFD8;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thank You Page</title>
+</head>
+    <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+<body>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+    <div class="container">
+        <div class="box">
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+
+
+            br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+            <p class="message"><b>CRITICAL SECTION</b></p>
+                <br>
+                <br>
+
+            <p>TA critical section is a specific area of code or a region of a program
+where common resources (such variables, data structures, or devices) are
+accessed and modified by several processes or threads (in concurrent
+programming and operating systems). The concept of the critical section
+is used to guarantee that only one process or thread can run this portion
+at once, avoiding race situations and preserving data consistency.
+The critical section problem occurs in systems with multiple
+processes or threads because multiple concurrent processes or threads
+may attempt to access the same shared resources at the same time. This
+can result in difficulties like data corruption, race situations, and other
+concurrency-related concerns if it is not controlled effectively.
+To ensure mutual exclusion in the critical section, synchronization
+mechanisms are used. Common synchronization techniques include:
+A <b>mutex</b> (also known as mutual exclusion) is a lock that only
+permits one process or thread to access the crucial portion at once. A
+process must obtain the mutex before proceeding to the vital area. The
+requesting process will be stopped until the mutex is released if it is
+already being held by another process.
+An integer variable called a <b>semaphore</b> is used to manage access to
+shared resources. It can be utilized to permit just a specified number of
+threads or processes to enter the vital region at once</p>
+            <br>
+            A mutex, condition variables, and shared data are all combined into a
+monitor, which is a higher-level synchronization architecture. It
+guarantees that only one process or thread can carry out <b>the monitor</b>
+operations at once, making it simple to synchronize access to shared
+resources.
+
+            <p class="tourify">Critical Section Problem in Operating System</p>
+
+
+
+                <br>
+The section of a program known as the Critical Section attempts to
+access shared resources. Any resource in a computer, such as a memory
+region, data structure, CPU, or any IO device, could constitute that
+resource.
+            <br>
+            <br>
+The operating system has trouble authorizing and preventing
+processes from entering the critical part because more than one process
+cannot operate in the critical section at once.
+A set of procedures that can guarantee that the Race condition among
+the processes will never exist are designed using the critical section
+problem.
+            <br>
+            <br>
+Our main objective is to resolve the critical section problem in order
+to synchronize the cooperative processes. In order to satisfy the
+following requirements, a solution must be offered
+            <br>
+            <br>
+            A Critical Section is a section of code that must be run in one atomic
+operation that accesses shared variables. It means that just one process
+must be doing its crucial portion at any given time in a group of
+processes that are cooperating. Any subsequent processes must wait until
+the first one is finished before beginning their key sections. The wait()
+and signal() functions are primarily responsible for controlling the entry
+into and exit from the crucial region.
+<br>
+            <br>
+<b>Section : Entry</b>
+ The method primarily asks for entry into the important part in
+this section.
+            <br>
+<b>Section : Exit</b>
+The crucial section comes after this one.
+The remedy for the Critical Section Issue
+The following three criteria must be met by a solution to the critical
+section problem:
+
+            <p class="thank-you">Thank you</p>
+        </div>
+        <br>
+    <br>
+    <br>
+    <br>
+
+                    <a href="{% url 'racecondition' %}"><button class="services-button" align="center "font-family: cursive>previous page</button></a>
+
+        <br>
+        <br>
+        <a href="{% url 'mutualexclusion' %}"><button class="services-button" align="center "font-family: cursive>Next page</button></a>
+    </div>
+
+
+
+</body>
+</html>

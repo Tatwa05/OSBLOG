@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+.services-button {
+ background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    background-color:#87CEEB;
+    color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.message {
+
+    font-size: 38px;
+}
+
+.thank-you {
+    font-size: 38px;
+    font-weight: bold;
+}
+.tourify{
+    font-size: 33px;
+    font-weight: bold;
+}
+.box:hover {
+    background-color: #D8BFD8;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thank You Page</title>
+</head>
+    <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+<body>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+    <div class="container">
+        <div class="box">
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+
+
+            br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+            <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+
+            <p class="message"><b>MUTUAL EXCLUSION</b></p>
+                <br>
+                <br>
+
+            <p>Only one process at a time can be in its critical phase out of a set of
+cooperating processes.
+Progress
+                <br>
+                <br>
+Any one of these threads must be permitted to enter a process'
+critical part if there is no process in that section already and one or more
+threads desire to execute that section.
+Bounded Waiting
+                <br>
+                <br>
+There is a restriction on how many other processes can enter their
+crucial sector once a process requests access to it, before this process's
+request is approved. The system must thus give the process permission to
+enter its crucial portion once the limit has been reached.
+                <br>
+                <br>
+Lock Variable
+The simplest method of synchronization is this one. This software
+mechanism is one that has been set up in user mode. It is possible to
+utilize this busy waiting method for more than two processes.
+</p>
+            <br>
+            <br>
+            An Lock variable lock is utilized in this method. There are only two
+potential lock values: 0 and 1. The crucial sector is either unoccupied or
+occupied depending on the lock value, which ranges from 0 to 1.
+A procedure that wishes to enter the crucial section first verifies the
+lock variable's value. If it is 0, it waits; if it is 1, it sets the lock value to 1
+and enters the crucial section.
+Entry Section →
+While (lock! = 0);
+Lock = 1;
+//Critical Section
+Exit Section →
+Lock =0;
+The Pseudo Code has three components, as can be seen by looking at
+it. Sections for entry, critical thinking, and departure.
+The lock variable's initial value is 0. The process enters the entrance
+section and verifies the condition specified in the while loop when it has
+to enter the crucial part.
+The while loop implies that the process will wait indefinitely until
+the lock value is 1 before proceeding. The process will enter the crucial
+section by setting the lock variable to 1 because the critical section is
+empty the first time.
+When the process leaves the crucial area, it resets the value of the
+lock to 0 in the exit section.
+            <br>
+            <br>
+Mutual Exclusion
+In some circumstances, the lock variable mechanism may not offer
+mutual exclusion. Looking at the program's pseudocode from the
+Operating System's perspective, or its Assembly code, will help to better
+explain this. The Code will now be translated into assembly language.
+            <br>
+            <br>
+Test Set Lock Mechanism
+the lock's adjustable mechanism On occasion, the process examines
+the lock variable's previous value and reaches the crucial area. This
+makes it possible for many processes to enter the crucial area. The code
+provided in part two of the following section can, however, be used in
+
+            place of the code presented in part one. Although the method is
+unaffected, we may ensure mutual exclusion somewhat but not entirely
+by doing this.
+The value of Lock is put into the local register R0 and set to 1 in the
+revised version of the code.
+But in step 3, the prior lock value—which is now stored in R0—is
+contrasted with 0
+
+            <br>
+            <br>
+            <br>
+
+            <table>
+        <tr>
+            <th>Section 1</th>
+            <th>Section 2</th>
+        </tr>
+        <tr>
+            <td>
+                <p>1. Load Lock, R0</p>
+                <p>2. CMP R0, #0</p>
+                <p>3. JNZ step1</p>
+                <p>4. store #1, Lock</p>
+            </td>
+            <td>
+                <p>1. Load Lock, R0</p>
+                <p>2. Store #1, Lock</p>
+                <p>3. CMP R0, #0</p>
+                <p>4. JNZ step 1</p>
+            </td>
+        </tr>
+    </table>
+
+
+            <p class="thank-you">Thank you</p>
+        </div>
+        <br>
+    <br>
+    <br>
+    <br>
+
+                    <a href="{% url 'criticalsection' %}"><button class="services-button" align="center "font-family: cursive>previous page</button></a>
+
+        <br>
+        <br>
+        <a href="{% url 'petersonssolution' %}"><button class="services-button" align="center "font-family: cursive>Next page</button></a>
+    </div>
+
+
+
+</body>
+</html>

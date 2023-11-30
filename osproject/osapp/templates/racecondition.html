@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.services-button {
+ background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    background-color:#87CEEB;
+    color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.message {
+
+    font-size: 38px;
+}
+
+.thank-you {
+    font-size: 38px;
+    font-weight: bold;
+}
+.tourify{
+    font-size: 33px;
+    font-weight: bold;
+}
+.box:hover {
+    background-color: #D8BFD8;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thank You Page</title>
+</head>
+    <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+<body>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+    <div class="container">
+        <div class="box">
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+            <p class="message"><b>RACE CONDITION</b></p>
+                <br>
+                <br>
+
+            <p>The behavior or output of a program becomes dependent on the
+relative timing of events, such as the sequence in which numerous
+processes or threads are run, in an operating system (OS) or in any
+concurrent computing system. It occurs when two or more processes or
+threads access crucial or shared resources without proper coordination,
+resulting in unpredictable and unwanted outcomes.
+As the processes or threads are "competing" to access the shared
+resource, the term "race" underscores the unpredictable nature of the
+outcome. Depending on how quickly each process or thread executes, a
+race condition's outcome may change each time the program is run.</p>
+            <br>
+            <p><b>Race conditions can lead to various issues, such as:</b><p>
+
+
+                <br>
+
+<b>Data Corruption:</b>When multiple processes or threads try to
+write to a shared resource simultaneously, data integrity can be
+compromised. The final value of the shared data may be
+incorrect or inconsistent.
+138
+            <br>
+            <br>
+<b>Deadlocks:</b>In certain cases, race conditions can lead to deadlock
+situations where processes or threads are stuck waiting for
+resources indefinitely.
+            <br>
+            <br>
+<b>Resource Starvation: </b>Some processes might get stuck in an
+infinite loop trying to access a shared resource, preventing other
+processes from executing and causing resource starvation.
+            <br>
+            <br>
+<b>Inappropriate Outputs: </b>Race conditions can lead to
+unexpected and incorrect results being produced, affecting the
+overall correctness and reliability of the program.
+
+
+            <p class="thank-you">Thank you</p>
+        </div>
+        <br>
+    <br>
+    <br>
+    <br>
+
+
+
+        <br>
+        <br>
+        <a href="{% url 'criticalsection' %}"><button class="services-button" align="center "font-family: cursive>Next page</button></a>
+    </div>
+
+
+
+</body>
+</html>

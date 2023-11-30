@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+.services-button {
+ background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    background-color:#87CEEB;
+    color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.message {
+
+    font-size: 38px;
+}
+
+.thank-you {
+    font-size: 38px;
+    font-weight: bold;
+}
+.tourify{
+    font-size: 33px;
+    font-weight: bold;
+}
+.box:hover {
+    background-color: #D8BFD8;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thank You Page</title>
+</head>
+    <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+<body>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+    <div class="container">
+        <div class="box">
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+
+
+            br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+            <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+                <br>
+                <br>
+                <br><br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+
+            <p class="message"><b>SEMAPHORES</b></p>
+                <br>
+                <br>
+            By leveraging the value of a straightforward integer variable to
+synchronize the advancement of interacting processes, Dijkstra presented
+a novel and very significant method for controlling concurrent processes
+in 1965. We refer to this integer variable as a semaphore. Therefore, it
+primarily functions as a synchronization tool and can only be accessed
+via the low-standard atomic operations wait and signal, which are
+denoted by P(S) and V(S), respectively.
+            <br>
+            The semaphore, which is used by all threads and has the actions wait
+and signal, can only contain a non-negative integer value, and it works as
+follows: <br>
+P(S): if S >= 1 then S := S - 1 <br>
+ else block and enqueue the process>; <br>
+V(S): if some process is blocked on the queue> <br>
+ then unblock a process <br>
+ else S := S + 1; <br>
+Wait and signal are traditionally defined as follows:
+When the value of its input S becomes non-negative (greater than or
+equal to 1), this procedure decreases its value. You may regulate the
+entry of a job into the important section primarily with the aid of this
+operation. If the value is negative or 0, no operation is carried out. The
+wait() operation is also known as a P(S) operation since it was initially
+referred to as a P operation. <br> <br>
+            <b>Specifications of semaphores </b>
+It is straightforward and always has an integer value that is not zero. <br>
+ Uses a variety of procedures.
+ May contain a variety of distinct crucial sections and
+semaphores. <br>
+ There are distinct access semaphores for every crucial part. <br>
+ Can, if desired, allow several processes to enter the crucial
+area at once. <br>
+Types of Semaphores
+There are two types <br>
+1. Binary semaphore <br>
+2. Counting semaphore <br>
+1.Binary Semaphore
+It is frequently referred to as a Mutex since it is a unique kind of
+semaphore that is utilized to perform mutual exclusion. When a program
+is being run, a binary semaphore only accepts the values 0 and 1. It is
+initialized to 1. In a binary semaphore, the signal action succeeds when
+
+he semaphore's value is 0, while the wait operation only functions if the
+semaphore's value is 1. Using binary semaphores is simpler than using
+counting semaphores. <br>
+2.Counting Semaphore
+Bounded concurrency is implemented using these. The Counting
+semaphores have an unbounded sphere of operation. These can be
+applied to limit access to a resource that has a limited number of
+instances. The number of resources that are accessible in this situation is
+indicated by the semaphore count. The semaphore count is automatically
+increased when resources are added, and decremented when resources
+are withdrawn. There is no mutual exclusion in counting semaphore.
+# Create a semaphore <br>
+semaphore = threading.Semaphore(1) <br>
+# Define a function that uses the semaphore <br>
+def critical_section(): <br>
+ # Acquire the semaphore <br>
+ semaphore.acquire() <br>
+ # Do something in the critical section <br>
+ print("Critical section") <br>
+ # Release the semaphore <br>
+ semaphore.release() <br>
+# Start the function in a thread <br>
+thread = threading.Thread(target=critical_section) <br>
+thread.start() <br>
+# Wait for the thread to finish <br>
+thread.join()<br>
+
+            <b>Advantages of Semaphores </b><br>
+ The management of resources is flexible because to semaphores. <br>
+ Semaphores are machine-independent and should be used in the
+microkernel's machine-independent code. <br>
+ Multiple processes cannot enter the crucial part thanks to
+semaphores. <br>
+OPERATING SYSTEM
+153
+ They provide simultaneous access from many threads to the
+crucial part. <br>
+ Semaphores are substantially more effective than certain other
+synchronization techniques because they rigorously adhere to the
+mutual exclusion principle. <br>
+ No resources are spent in semaphores due to busy waiting since
+processor time isn't wasted checking whether a condition is met
+before allowing a process to access the vital area. <br>
+<b>Disadvantages of Semaphores</b><br>
+ The possibility of priority inversion, wherein low priority
+processes access the vital portion first and high priority
+processes access the critical area later, is one of the main
+drawbacks of semaphores. <br>
+ The Wait and Signal actions must be carried out in the
+appropriate sequence in order to prevent deadlocks in the
+semaphore. <br>
+ It is not possible to employ semaphores on a wide scale since
+doing so results in a loss of modularity because the wait() and
+signal() procedures prevent the system's organized layout from
+being created. <br>
+ Their usage is merely by tradition and not by law. <br>
+ A procedure might get permanently blocked if used improperly.
+Deadlock describes such a circumstance. In the upcoming
+classes, we will thoroughly examine deadlocks<br>
+
+            <p class="thank-you">Thank you</p>
+        </div>
+        <br>
+    <br>
+        <a href="{% url 'petersonssolution' %}"><button class="services-button" align="center "font-family: cursive>Previous page</button></a>
+    <br>
+    <br>
+
+                    <a href="{% url 'racecondition' %}"><button class="services-button" align="center "font-family: cursive>Back to first page</button></a>
+
+        <br>
+        <br>
+
+    </div>
+
+
+
+</body>
+</html>

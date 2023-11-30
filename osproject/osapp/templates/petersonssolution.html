@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+.services-button {
+ background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    background-color:#87CEEB;
+    color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.message {
+
+    font-size: 38px;
+}
+
+.thank-you {
+    font-size: 38px;
+    font-weight: bold;
+}
+.tourify{
+    font-size: 33px;
+    font-weight: bold;
+}
+.box:hover {
+    background-color: #D8BFD8;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thank You Page</title>
+</head>
+    <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+<body>
+
+
+                <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+    <div class="container">
+        <div class="box">
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+
+
+            br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+            <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+<br>
+                <br>
+<br>
+<br>
+             <br>
+             <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>    <br>
+                <br>
+<br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+             <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+                <br>
+                <br>
+                <br>
+<br>
+<br>
+<br>
+
+             <br>
+                <br>
+                <br>
+<br>
+<br>
+
+<br>
+
+                <br>
+
+            <p class="message"><b>PETERSON'S SOLUTION</b></p>
+                <br>
+                <br>
+
+            <p>OThis is a well-known, software-based fix for crucial section issues.
+The reason it is termed Peterson's solution is because computer scientist
+Peterson created it.
+With this approach, anytime a process is running in a critical
+condition, the other process merely runs the remaining code, and vice
+versa. This technique also aids in ensuring that only one process may be
+active in the crucial region at any given moment.
+All three requirements are maintained by this answer:
+ The comfort of Mutual Exclusion comes from the fact that
+only one process can ever access the crucial area.
+            A process outside the crucial area cannot prevent other
+processes from approaching the critical section, which is
+another consoling aspect of progress.
+ Because every process has an equal opportunity to access the
+Critical section, bounded waiting is guaranteed.
+Peterson's solution is a software-based solution to the critical section
+problem in operating systems. The critical section problem is a
+synchronization problem that arises when multiple processes need to
+access a shared resource. If the processes access the shared resource at
+the same time, it can lead to data corruption or other problems.
+Peterson's solution solves the critical section problem by using two
+shared variables:
+* `flag[i]`: A boolean variable that indicates whether process `i` is
+interested in entering the critical section.
+* `turn`: An integer variable that indicates which process has the
+right to enter the critical section.
+The following pseudocode shows how Peterson's solution works:
+procedure critical_section(i)
+                <br>
+ flag[i] := true<br>
+ turn := j<br>
+ while flag[j] and turn = j do<br>
+ continue<br>
+ // critical section<br>
+ flag[i] := false<br>
+end procedure<br>
+The first step is for process `i` to set `flag[i]` to `true`. This indicates
+that process `i` is interested in entering the critical section. Then, process
+`i` sets `turn` to the identifier of the other process. This ensures that only
+one process can enter the critical section at a time.
+                <br>
+Next, process `i` enters a loop. In the loop, process `i` checks if
+`flag[j]` is `true` and if `turn` is equal to `j`. If both of these conditions
+are true, then it means that process `j` is also interested in entering the
+critical section. In this case, process `i` simply continues to loop.
+144
+                <br>
+If `flag[j]` is not `true` or if `turn` is not equal to `j`, then process `i`
+can enter the critical section. Once process `i` is in the critical section, it
+can access the shared resource.
+When process `i` is finished with the critical section, it sets `flag[i]`
+to `false`. This indicates that process `i` is no longer interested in
+entering the critical section.
+                 <br>
+Peterson's solution is a simple and elegant solution to the critical
+section problem. It is also deadlock-free, meaning that no two processes
+will ever be deadlocked waiting to enter the critical section.
+However, Peterson's solution does have some limitations. It can only
+be used for two processes, and it can be inefficient in some cases.
+Despite these limitations, Peterson's solution is a valuable tool for
+understanding and solving the critical section problem.
+                 <br>
+                <b>A mutex lock</b>
+                 <br>
+Due to the difficulty of implementing the synchronization hardware
+solution, Mutex Locks, a rigid software technique, was developed.
+According to this method, a LOCK is gained over the vital resources that
+are updated and utilized inside the crucial portion of code in the entrance
+part, and it is released in the exit section.
+No other process may access the resource since it is locked while a
+process is completing its crucial portion
+            <br>
+            <br>
+
+             <p class="tourify">Classical Synchronization Problem: </p>
+            <br>
+
+Problem State
+            Classical synchronization problems are a set of problems that arise in
+concurrent programming when multiple processes need to access a
+shared resource. These problems can lead to data corruption or other
+errors if they are not solved correctly.<br>
+Some of the most well-known classical synchronization problems
+include:<br>
+ The critical section problem: This problem arises when multiple
+processes need to access a shared resource, but only one process
+can access the resource at a time.<br>
+
+            <b>The producer-consumer problem:</b>This problem arises when one
+process (the producer) produces data and another process (the
+consumer) consumes data. The producer and consumer must
+coordinate their access to the shared data so that the producer does
+not produce more data than the consumer can consume. <br>
+ <b>The readers-writers problem:</b> This problem arises when there
+are multiple processes that need to access a shared resource, but
+some processes only need to read the resource and others need to
+write to the resource. The readers and writers must coordinate their
+access to the shared resource so that the readers do not interfere
+with the writers. <br>
+ <b>The dining philosopher‟s problem:</b> This problem is a classic
+example of a deadlock. Five philosophers are sitting around a
+table, and each philosopher has a chopstick in each hand. A
+philosopher can only eat if they have both chopsticks. If all five
+philosophers try to pick up their chopsticks at the same time, they
+will all deadlock. <br>
+ <b>Bounded Buffer Problem:</b> One of the most well-known
+synchronization issues is the bounded buffer problem, often
+known as the producer-consumer problem. Before we move on to
+the answer and the computer code, let's first clarify the issue at
+hand. <br>
+<b>Problem Statement</b>
+            Each slot in the buffer, which has n slots, may hold one unit of data.
+Producer and consumer, two processes that use the buffer, are now
+active.
+A producer attempts to insert data into a buffer slot that is empty.
+Data is attempted to be removed from a full slot in the buffer by a
+146
+consumer. As you should have figured by now, if those two procedures
+are run simultaneously, the outcome won't be what was anticipated
+            <br>
+            <br>
+            <b> Dining Philosopher Problem </b>
+
+            <br>
+            <br>
+
+Another well-known synchronization problem that is used to assess
+circumstances in which it is necessary to distribute resources across
+several processes is the dining philosophers problem.
+Problem Statement:
+Imagine a dining table with a circle in the middle and five
+philosophers seated there. As seen in the illustration below, the dinner
+table contains five chopsticks and a bowl of rice in the center
+            <br>
+            A philosopher is either eating or thinking at any given time. A
+philosopher uses one chopstick from their left and one from their right
+148
+            <br>
+when he wants to eat. A philosopher places both chopsticks back where
+they were when he wants to reflect.
+
+            <b> Reader Writer Problem  </b>
+
+            <br>
+            <br>
+Another typical synchronization issue is the readers-writers dilemma.
+This issue has several variations, one of which is discussed here.
+            <br>
+<b>Problem Statement:</b>
+There is a common resource that several processes should access. In
+this context, there are two different sorts of processes. Both of them read
+and write. The shared resource can be used simultaneously by any
+number of readers, but only one writer can make changes to it. No other
+process may access the resource while a writer is writing data to it. If
+there are more readers accessing the resource than zero at any given
+moment, the writer cannot update the resource. <br>            <p class="thank-you">Thank you</p>
+        </div>
+        <br>
+    <br>
+    <br>
+    <br>
+
+                    <a href="{% url 'mutualexclusion' %}"><button class="services-button" align="center "font-family: cursive>previous page</button></a>
+
+        <br>
+        <br>
+        <a href="{% url 'semaphores' %}"><button class="services-button" align="center "font-family: cursive>Next page</button></a>
+    </div>
+
+
+
+</body>
+</html>
